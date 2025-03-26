@@ -1,0 +1,14 @@
+services:
+  bot:
+    build: .
+    restart: unless-stopped
+
+    environment:
+      - BOT_TOKEN=TELEGRAM_TOKEN
+      - ADMINS=ADMIN_ID
+
+    volumes:
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+      - ./instance:/instance
+      - ./logs:/logs
