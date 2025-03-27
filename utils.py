@@ -30,3 +30,6 @@ def update_user_role(db: Session, user_id: int, role: str):
 
 def is_admin(telegram_id):
     return telegram_id in Config.ADMINS
+
+def get_invite_by_token(token: str, db: Session):
+    return db.query(Invite).filter(Invite.token == token).first()
