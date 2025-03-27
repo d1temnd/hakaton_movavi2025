@@ -3,6 +3,7 @@ from sqlalchemy.orm import Session
 from datetime import timedelta, datetime
 from config import Config
 from data import Invite, User
+import json
 
 def get_invite_by_token(db: Session, token: str):
     return db.query(Invite).filter_by(token=token).first()
@@ -33,3 +34,10 @@ def is_admin(telegram_id):
 
 def get_invite_by_token(token: str, db: Session):
     return db.query(Invite).filter(Invite.token == token).first()
+
+
+
+def load_menu_structure(path='./instance/work_docs.json'):
+    with open(path, 'r', encoding='utf-8') as f:
+        return json.load(f)
+    

@@ -37,7 +37,6 @@ def handle_inline_button(bot, call):
             )
     elif call.data.startswith("role_"):
         role = call.data.split("_")[1].strip().lower()
-        
         token = generate_invite_token(call.from_user.id, db, role)
         bot_username = bot.get_me().username
         invite_link = f"https://t.me/{bot_username}?start={token}"
