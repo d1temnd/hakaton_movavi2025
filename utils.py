@@ -36,8 +36,6 @@ def get_invite_by_token(token: str, db: Session):
     return db.query(Invite).filter(Invite.token == token).first()
 
 
-
-def load_menu_structure(path='./instance/work_docs.json'):
-    with open(path, 'r', encoding='utf-8') as f:
-        return json.load(f)
-    
+def load_work_docs():
+    with open("instance/work_docs.json", "r", encoding="utf-8") as file:
+        return json.load(file)

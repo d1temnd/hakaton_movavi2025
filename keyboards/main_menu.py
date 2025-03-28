@@ -13,6 +13,10 @@ def main_menu_keyboard(user_id):
         button1 = types.InlineKeyboardButton("Проверить свою роль", callback_data="check_role")
         keyboard.add(button1)
 
+    # Добавляем кнопку "Документация"
+    button_docs = types.InlineKeyboardButton("Документация", callback_data="documentation")
+    keyboard.add(button_docs)
+
     button_back = types.InlineKeyboardButton("Назад", callback_data="back_to_main")
     keyboard.add(button_back)
     return keyboard
