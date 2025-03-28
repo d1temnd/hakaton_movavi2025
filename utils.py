@@ -3,6 +3,7 @@ from sqlalchemy.orm import Session
 from datetime import timedelta, datetime
 from config import Config
 from data import Invite, User
+import json
 
 def get_invite_by_token(db: Session, token: str):
     return db.query(Invite).filter_by(token=token).first()
@@ -30,3 +31,11 @@ def update_user_role(db: Session, user_id: int, role: str):
 
 def is_admin(telegram_id):
     return telegram_id in Config.ADMINS
+
+def get_invite_by_token(token: str, db: Session):
+    return db.query(Invite).filter(Invite.token == token).first()
+
+
+def load_work_docs():
+    with open("instance/work_docs.json", "r", encoding="utf-8") as file:
+        return json.load(file)

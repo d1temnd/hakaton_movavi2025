@@ -63,7 +63,7 @@ db.sqlite3
 db.sqlite3-journal
 
 # Flask stuff:
-instance/
+# instance/
 .webassets-cache
 
 # Scrapy stuff:
@@ -164,3 +164,5 @@ cython_debug/
 bot/settings.ini
 bot/.vscode/launch.json
 .idea
+
+logs
