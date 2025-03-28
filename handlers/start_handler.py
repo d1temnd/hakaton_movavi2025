@@ -7,7 +7,7 @@ from utils import get_invite_by_token
 def start(bot, message):
     db = SessionLocal()
     user_id = message.from_user.id
-    args = message.text.split()  # Получаем аргументы (токен инвайта, если есть)
+    args = message.text.split()
 
     user = db.query(User).filter(User.telegram_id == user_id).first()
 

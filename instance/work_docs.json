@@ -1,0 +1,59 @@
+{
+  "curator": {
+   "АХО": {
+     "полезные телефоны 📞": "https://example.com/phone_numbers"
+   },
+   "карта курсов 🗺": {
+     "короткосрочные группы ⏳": "https://example.com/short_courses",
+     "летняя школа 🌞": "https://example.com/summer_school",
+     "основные курсы 🎓": "https://example.com/main_courses"
+   },
+   "мотивация 💪": {
+     "мовави буст 🚀": "https://example.com/movavi_boost",
+     "обратная связь 📝": "https://example.com/feedback"
+   },
+   "о компании 🏢": "https://example.com/about",
+   "партнеры 🤝": {
+     "10 гимназия 🏫": {
+       "курсы 📚": "https://example.com/gymnasium_courses"
+     },
+     "проскул 🏫": {
+       "курсы 📚": "https://example.com/proschool_courses"
+     },
+     "рост 🚀": {
+       "курсы 📚": "https://example.com/rost_courses",
+       "олимпиада 🏆": "https://example.com/olympiad"
+     }
+   },
+   "структура 🏗": "https://example.com/structure"
+ },
+ "teacher": {
+   "карта курсов 🗺": {
+     "короткосрочные группы ⏳": "https://example.com/short_courses",
+     "летняя школа 🌞": "https://example.com/summer_school",
+     "основные курсы 🎓": "https://example.com/main_courses"
+   },
+   "метод работы 🛠": "https://example.com/method",
+   "мотивация 💪": {
+     "мовави буст 🚀": "https://example.com/movavi_boost",
+     "обратная связь 📝": "https://example.com/feedback"
+   },
+   "о компании 🏢": "https://example.com/about",
+   "партнеры 🤝": {
+     "10 гимназия 🏫": {
+       "расписание 📅": "https://example.com/gymnasium_schedule"
+     },
+     "проскул 🏫": {
+       "курсы 📚": "https://example.com/proschool_courses",
+       "расписание 📅": "https://example.com/proschool_schedule"
+     },
+     "рост 🚀": {
+       "курсы 📚": "https://example.com/rost_courses",
+       "олимпиада 🏆": "https://example.com/olympiad",
+       "расписание 📅": "https://example.com/rost_schedule"
+     }
+   },
+   "структура 🏗": "https://example.com/structure"
+ }
+
+}
